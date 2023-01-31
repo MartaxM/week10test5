@@ -18,6 +18,7 @@ function initializeCode() {
         let logout = document.createElement("button");
         logout.innerHTML = "Logout";
         logout.setAttribute("onclick", "logOut()");
+        logout.setAttribute("id", "logout");
 
         fetch("/api/private", {
             method: "GET",
